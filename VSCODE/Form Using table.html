@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://127.0.0.1:5500/VS%20CODE/FormUsingTable.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Using table</title>
+</head>
+<body align="center" bgcolor="orange">
+    <form>
+        <marquee behavior="Rotate" direction="left">
+        <h1>Online Application Registrion</h1>
+    </marquee>
+    <table align="center" border="5px" bgcolor="yellow">
+        <thead>
+            <tr>
+    <td>Enter your Name</td>
+    <td>
+    <input type="text" aria-placeholder="ex:Pradeep">
+     </td>
+            </tr>
+            <tr>
+                <td>Enter Your MobileNo</td>
+                <td>
+                    <input type="tel" aria-placeholder="ex:1234567890">
+                </td>
+            </tr>
+            <tr>
+                <td> Enter Your Address</td>
+                <td>
+                    <textarea placeholder="Ex:Address hear"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Your Email-Address</td>
+                <td>
+                    <input type="email" aria-placeholder="Ex:Acdemy@gamil.com">
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" value="Male" name="gender">Male
+                    <input type="radio" value="FeMale" name="gender">FeMale
+                </td>
+            </tr>
+            <tr>
+                <td>Time Duration</td>
+                <td>
+                    <input type="time" placeholder="Entry time" entery="" time="">
+                    <input type="time" placeholder="Exit time" exit="" time="">
+                </td>
+            </tr>
+            <tr>
+                <td>Date Of Join</td>
+                <td>
+                    <input type="datetime-local" placeholder="Enter Date&amp;Time">
+                </td>
+            </tr>
+            <tr>
+                <td>select your Course</td>
+                <td>
+                    <select>
+             <option select="" hidden="">Select one</option>
+             <option>Java</option>
+             <option>HTML</option>
+             <option>Css</option>
+                    </select>
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <div>
+        <h5><input type="checkbox"> I agree the terms and Condtion 
+     </h5>
+
+     </div>
+     <div>
+         <font color="yellow"><input type="submit" value="Register" <="" font="">
+         <input type="reset" value="Cancel" bgcolor="red">
+     </font></div><font color="yellow">
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</font></form></body></html>
